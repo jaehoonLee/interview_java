@@ -1,5 +1,7 @@
 package com.interview.main;
 
+import com.interview.ds.Stack;
+
 /**
  * Created with IntelliJ IDEA.
  * User: leejaehoon
@@ -10,10 +12,19 @@ package com.interview.main;
 public class Main {
     public static void main(String args[])
     {
-        System.out.println("JH");
+        Stack stack = new Stack();
+        stack.push("Hi");
+        stack.push("Hello");
+        stack.push("Why");
 
+        System.out.println(stack.pop());
+        System.out.println(stack.size());
+        System.out.println(stack.pop());
+        System.out.println(stack.size());
+        System.out.println(stack.pop());
+        System.out.println(stack.size());
+        System.out.println(stack.pop());
 
-
-         return;
+        return;
     }
 }
